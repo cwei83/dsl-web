@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<link rel=stylesheet" type="text/css" href="jquery.fullPage.css"/>
+	<link rel=stylesheet" type="text/css" href="dsl.css"/>
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+	<script src="vendors/jquery.easings.min.js"></script>
+	<script type="text/javascript" src="jquery.fullPage.js"></script>
+
+	<script type="text/javascript">
+		$(document).ready(function() {
+			$('#fullpage').fullpage({
+				scrollingSpeed: 500,
+				loopTop: true,
+				loopBottom: true
+			});
+
+			$('.dy_btn img').hover(function() {
+				$('.dy_btn img').addClass("dy_btn2");
+			}, function() {
+				$('.dy_btn img').removeClass("dy_btn2");
+			});
+
+		});
+	</script>
+	<style type="text/css">
+		.section{
+			font-size: 200px;
+			text-align: center;
+		}
+		body{
+			background-image: url("img/body-01.png");
+		}
+		<!--
+		#FIRST{
+			display: block;
+			width: expression(this.width > 1280? "1280px" : this.width);
+			height: expression(this.height > 800? "800px" : this.height);
+			background-repeat: no-repeat;
+			background-size: 100% 100% ;
+			background-position: center center;
+     	}
+		-->
+		.logo img{
+			margin-top: 5%;
+		}
+		.major img{
+			margin-top: 10%;
+			margin-bottom: 17%;
+		}
+		.slogon img{
+			margin-top: 20%;
+		}
+		.lesson img{
+			margin-top: 2%;
+		}
+		.ncku img{
+			margin-bottom: 7%;
+		}
+		.hash {
+			width: 100%;
+			height: 60px;
+			background-color: #D9E021;
+		}
+		.hash img {
+			margin-top: 1.8%;
+			margin-left: 10%;
+		}
+		.dy_btn{
+			float: right;
+			margin-right: 18%;
+			height: 50px;
+		}
+		.dy_btn a{
+			height: 50px;
+		}
+		.director img{
+			float: left;
+			margin-left: 6%;
+			margin-top: 3%;
+		}
+		.dy_1 img{
+			margin-top: 2%;
+			margin-right: 8%;
+		}
+		.dy_2 img{
+			margin-right: 9%;
+		}
+		.dy_btn2{
+			content:url("img/btn_2.png");
+		}
+		.dy_btn1{
+			content:url("img/btn_1.png");
+		}
+
+	</style>
+
+</head>
+
+
+<body>
+
+<div class="hash">
+	<img src="img/hash.png" width="20%" height="40%"/>
+</div>
+
+<div id="fullpage">
+	<div class="section" id="FIRST">
+		<div class="pic1">
+			<div class="logo">
+				<img src="img/logo.png" width="40%" height="40%"/>
+			</div>
+			<div class="ncku">
+			<img src="img/ncku.png" width="70%" height="70%"/>
+			</div>
+		</div> 
+	</div>
+
+	<div class="section" id="SECOND">
+		<div class="slogon">
+			<img src="img/SLOGAN.png" width="93%" height="93%"/>
+		</div>
+	</div>
+
+	<div class="section" id="THIRD">
+		<div class="major">
+			<img src="img/major.png" width="90%" height="90%"/>
+		</div>
+	</div>
+
+	<div class="section" id="FOURTH">
+		<div class="lesson">
+			<img src="img/lesson_1.png" width="70%" height="60%"/>
+		</div>
+	</div>
+
+	<div class="section" id="FIFTH">
+		<div class="director">
+			<img src="img/director.png" width="30%" height="25%"/>
+		</div>
+		<div class="dy_1">
+			<img src="img/dy_1.png" width="52%" height="52%"/>
+		</div>
+		<div class="dy_btn">
+			<a href="http://www.tcm.ncku.edu.tw/people/bio.php?PID=24">
+				<img src="img/btn_1.png" width="100px" height="50px"/> 
+			</a>
+		</div>		
+		<div class="dy_2">
+			<img src="img/dy_2.png" width="23%" height="23%"/>
+		</div>
+	</div>
+</div>
+
+</body>
+</html>
