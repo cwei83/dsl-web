@@ -30,7 +30,11 @@
 			text-align: center;
 		}
 		body{
-			background-image: url("img/body-01.png");
+			background-image: url("img/body_color-05.png");
+			background-size: 100% 100%;
+		}
+		#fullpage{
+			position: absolute;
 		}
 		<!--
 		#FIRST{
@@ -43,26 +47,26 @@
      	}
 		-->
 		.logo img{
-			margin-top: 5%;
+			margin-top: 10%;
 		}
 		.major img{
-			margin-top: 10%;
+			margin-top: 15%;
 			margin-bottom: 17%;
 		}
 		.slogon img{
-			margin-top: 20%;
+			margin-top: 27%;
 		}
 		.lesson img{
-			margin-top: 2%;
+			margin-top: 8%;
 		}
 		.ncku img{
 			margin-bottom: 7%;
 		}
-		.hash {
+<--		.hash {
 			width: 100%;
 			height: 60px;
 			background-color: #D9E021;
-		}
+		}-->
 		.hash img {
 			margin-top: 1.8%;
 			margin-left: 10%;
@@ -77,15 +81,22 @@
 		}
 		.director img{
 			float: left;
-			margin-left: 6%;
-			margin-top: 3%;
+			margin-top: 10%;
+			margin-left: 6%
 		}
 		.dy_1 img{
-			margin-top: 2%;
-			margin-right: 8%;
+			position:relative;
+			float: middle;
+			margin-top: 9%;
+			max-width: 740px;
+			max-height: 265px; 
 		}
 		.dy_2 img{
-			margin-right: 9%;
+			position:relative;
+			float: middle;
+			margin-bottom: 20%;
+			max-width: 327px;
+			max-height: 327px;
 		}
 		.dy_btn2{
 			content:url("img/btn_2.png");
@@ -100,10 +111,10 @@
 
 
 <body>
-
+<!--
 <div class="hash">
 	<img src="img/hash.png" width="20%" height="40%"/>
-</div>
+</div>-->
 
 <div id="fullpage">
 	<div class="section" id="FIRST">
@@ -137,7 +148,7 @@
 
 	<div class="section" id="FIFTH">
 		<div class="director">
-			<img src="img/director.png" width="30%" height="25%"/>
+			<img src="img/director.png" width="25%" height="40%"/>
 		</div>
 		<div class="dy_1">
 			<img src="img/dy_1.png" width="52%" height="52%"/>
